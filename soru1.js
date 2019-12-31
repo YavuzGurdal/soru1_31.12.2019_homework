@@ -11,7 +11,20 @@
  */
 
 
- 
+let tekrarEdenDegerleriBul = function (array) {
+
+    let tekrarEdenler = array.filter(function(item,index){
+      return array.indexOf(item) != index;    
+    })
+    
+    return tekrarEdenler;
+
+}
+
+console.log(tekrarEdenDegerleriBul ([2, -2, 3, 5, 6, 7, 6, -2, 'ali', 'veli', 'ali']));
+
+
+/*
 let tekrarEdenElemanlar = [];
 
 let tekrarEdenDegerleriBul = function (array) {
@@ -35,3 +48,4 @@ return tekrarEdenElemanlar;
 }
 
 console.log(tekrarEdenDegerleriBul ([2, 3, 5, 6, 6, 2, -2, -2, 'ali', 'veli', 'ali']));
+*/
